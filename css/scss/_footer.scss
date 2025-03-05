@@ -1,0 +1,23 @@
+#footer-private {
+    position: relative;
+    padding: 4em 0 1em;
+    background-color: #003C7A;
+@media (min-width:1200px){
+.col-lg-4 {
+    &:nth-child(2){
+        padding-inline-start:6%;
+    }
+    &:nth-child(3){
+        padding-inline-start:6%;
+    }
+}
+}
+h4 {
+    letter-spacing: 0.5px;
+}
+p,a {
+    font-size: clamp(14px, 0.9375vw, 18px);
+    letter-spacing: 0.5px;
+    font-weight: 200;
+}
+}

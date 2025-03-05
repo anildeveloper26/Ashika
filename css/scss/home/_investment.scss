@@ -1,0 +1,22 @@
+#investment-criteria {
+    position: relative;
+    padding-top: 4em;
+    .row {
+        padding: 2em;
+        background-color: #F7F7F7;
+        @media (max-width:992px){
+            padding: 2em 0px 2em 0px;
+        }
+        @media (min-width:992px){
+            .col-lg-3:not(:first-child) {
+                border-left: 2px solid #BDBDBD;
+            }
+        }
+        .each-block {
+         padding-left: 10px;
+         p {
+            color: #4f4f4f;
+         }
+        }
+    }
+}

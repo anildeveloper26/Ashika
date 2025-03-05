@@ -1,0 +1,63 @@
+#portfolio-private {
+    position: relative;
+    overflow: hidden;
+    background-color: #E7F1F6;
+    padding: 3em 0;
+    .left-heading {
+        color: #003c7a;
+        position: relative;
+    }
+    .line {
+        background-color: #003c7a;
+        width: 15px;
+        height: 2px;
+        display: flex;
+        align-items: center;
+    }
+    .blocks {
+        display: flex;
+        gap: 1em;
+        .each-block {
+            background-color: #fff;
+            padding: 1em;
+            p {
+                color: #003C7A;
+                font-weight: 200;
+                text-transform: uppercase;
+                font-size: clamp(12px, 0.8333vw, 16px);
+            }
+            img {
+                margin: 1.5em 0 2em;
+                height: 70px;
+                width: 140px;
+                max-width: 140px;
+            }
+            a {
+                text-decoration: none;
+                font-size: clamp(12px, 0.8333vw, 16px);
+                font-weight: 200;
+            }
+        }
+    }
+    .note {
+        margin-top: 1.5em;
+        padding: 10px 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 47%, rgba(255, 255, 255, 0) 100%);
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 4em !important;
+    }
+    .swiper-button-next:after {
+        content: url(/img/home/right-arrow.svg);
+    }
+    .swiper-button-prev:after {
+        content: url(/img/home/left-arrow.svg);
+    }
+    .swiper-button-prev {
+        left: inherit;
+        right: 5em;
+    }
+    .swiper-button-next {
+        right: 2em;
+    }
+}
