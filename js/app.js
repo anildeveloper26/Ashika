@@ -38,3 +38,4 @@ $("img.svg").each(function () {
     "xml"
   );
 });
+
