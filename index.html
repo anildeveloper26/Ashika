@@ -13,6 +13,8 @@
     <!-- Your custom script after Motion -->
     <script type="module" src="js/motiondev.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lenis@1.2.0/dist/lenis.min.js"></script> 
+
   </head>
   <body class="
   ">
@@ -715,6 +717,17 @@
         disableOnInteraction: false,
       },
     });
+  </script>
+  <script>
+    // Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
   </script>
   </body> 
 </html> 
