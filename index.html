@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/motion@10.16.2/dist/motion.umd.js"></script>
     <!-- Your custom script after Motion -->
     <script type="module" src="js/motiondev.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="
   ">
@@ -215,151 +216,160 @@
       </div>
      </section>
      <!-- team -->
-      <section id="team-private" class="mb-4 ">
-        <div class="container-fluid">
-          <div class="d-flex gap-2 mb-2 align-items-center About">
-            <div class="line"></div>
-            <h4 class="left-heading text-uppercase font-32 fw-300">Team</h4>
-          </div>
-          <div class="row">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active font-16 fw-200" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Investment advisory</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link  font-16 fw-200" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Operating advisory</button>
-              </li>
-            </ul>
-            <div class="tab-content mt-3" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <div class="block" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img src="img/team/sarvesh-kanodia.webp" alt="sarvesh-kanodia" class="img-fluid">
-                      <div class="txt">
-                        <div>
-                          <h4>Sarvesh Kanodia</h4>
-                          <p>Co-founder and Managing Partner</p>
-                        </div>
-                        <div>
-                        <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                        </div>
+     <section id="team-private" class="mb-4">
+      <div class="container-fluid">
+        <div class="d-flex gap-2 mb-2 align-items-center About">
+          <div class="line"></div>
+          <h4 class="left-heading text-uppercase font-32 fw-300">Team</h4>
+        </div>
+        <div class="row">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active font-16 fw-200" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Investment advisory</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link font-16 fw-200" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Operating advisory</button>
+            </li>
+          </ul>
+          <div class="tab-content mt-3" id="pills-tabContent">
+            <!-- Investment Advisory Section -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="block relative overflow-hidden transition-all duration-700 group pb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="img/team/sarvesh-kanodia.webp" alt="sarvesh-kanodia" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                    <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                    <div class="txt">
+                      <div>
+                        <h4>Sarvesh Kanodia</h4>
+                        <p>Co-founder and Managing Partner</p>
+                      </div>
+                      <div>
+                        <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
-                    <div class="block">
-                      <img src="img/team/sougata-roy.webp" alt="sarvesh-kanodia" class="img-fluid">
-                      <div class="txt">
-                        <div>
-                          <h4>Sougata Roy</h4>
-                          <p>Co-founder and Managing Partner</p>
-                        </div>
-                        <div>
-                        <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                        </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                    <img src="img/team/sougata-roy.webp" alt="sougata-roy" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                    <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                    <div class="txt">
+                      <div>
+                        <h4>Sougata Roy</h4>
+                        <p>Co-founder and Managing Partner</p>
+                      </div>
+                      <div>
+                        <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
-                    <div class="block">
-                      <img src="img/team/chirag-jain.webp" alt="sarvesh-kanodia" class="img-fluid">
-                      <div class="txt">
-                        <div>
-                          <h4>Chirag Jain</h4>
-                          <p>Co-founder and Managing Partner</p>
-                        </div>
-                        <div>
-                        <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                        </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                    <img src="img/team/chirag-jain.webp" alt="chirag-jain" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                    <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                    <div class="txt">
+                      <div>
+                        <h4>Chirag Jain</h4>
+                        <p>Co-founder and Managing Partner</p>
+                      </div>
+                      <div>
+                        <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <div class="swiper-container swiper-operating-slider">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="block">
-                    <img src="img/team/brijesh-agarwal.webp" alt="sarvesh-kanodia" class="img-fluid">
-                    <div class="txt">
-                      <div>
-                        <h4>Brijesh Agarwal</h4>
-                        <p>Indiamart</p>
-                      </div>
-                      <div>
-                      <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="block">
-                    <img src="img/team/shibam.webp" alt="sarvesh-kanodia" class="img-fluid">
-                    <div class="txt">
-                      <div>
-                        <h4>Shibam</h4>
-                        <p>Atomberg</p>
-                      </div>
-                      <div>
-                      <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="block">
-                    <img src="img/team/amit-garg.webp" alt="sarvesh-kanodia" class="img-fluid">
-                    <div class="txt">
-                      <div>
-                        <h4>Amit Garg</h4>
-                        <p>Avanzia Global</p>
-                      </div>
-                      <div>
-                      <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="block">
-                    <img src="img/team/amit-chopra.webp" alt="sarvesh-kanodia" class="img-fluid">
-                    <div class="txt">
-                      <div>
-                        <h4>Amit Chopra</h4>
-                        <p>Avanzia Global</p>
-                      </div>
-                      <div>
-                      <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="block">
-                    <img src="img/team/gawir-baig.webp" alt="sarvesh-kanodia" class="img-fluid">
-                    <div class="txt">
-                      <div>
-                        <h4>Gawir Baig</h4>
-                        <p>Anthem Bisciences</p>
-                      </div>
-                      <div>
-                      <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> 
-
             </div>
+            <!-- Operating Advisory Section -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+              <div class="swiper-container swiper-operating-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                      <img src="img/team/brijesh-agarwal.webp" alt="brijesh-agarwal" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                      <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                      <div class="txt">
+                        <div>
+                          <h4>Brijesh Agarwal</h4>
+                          <p>Indiamart</p>
+                        </div>
+                        <div>
+                          <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                      <img src="img/team/shibam.webp" alt="shibam" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                      <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                      <div class="txt">
+                        <div>
+                          <h4>Shibam</h4>
+                          <p>Atomberg</p>
+                        </div>
+                        <div>
+                          <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                      <img src="img/team/amit-garg.webp" alt="amit-garg" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                      <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                      <div class="txt">
+                        <div>
+                          <h4>Amit Garg</h4>
+                          <p>Avanzia Global</p>
+                        </div>
+                        <div>
+                          <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                      <img src="img/team/amit-chopra.webp" alt="amit-chopra" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                      <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                      <div class="txt">
+                        <div>
+                          <h4>Amit Chopra</h4>
+                          <p>Avanzia Global</p>
+                        </div>
+                        <div>
+                          <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block relative overflow-hidden transition-all duration-700 group pb-3">
+                      <img src="img/team/gawir-baig.webp" alt="gawir-baig" class="img-fluid transition-transform duration-700 group-hover:scale-[0.99]">
+                      <div class="absolute bottom-[-1px] left-0 right-0 h-1 bg-blue-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-700"></div>
+                      <div class="txt">
+                        <div>
+                          <h4>Gawir Baig</h4>
+                          <p>Anthem Biosciences</p>
+                        </div>
+                        <div>
+                          <a href="#/"><img src="img/team/linkedin.svg" alt="linkedin" class="img-fluid"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section> 
       <!-- team models start-->
 <!-- Modal -->
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -705,8 +715,6 @@
         disableOnInteraction: false,
       },
     });
-
-
   </script>
   </body> 
 </html> 

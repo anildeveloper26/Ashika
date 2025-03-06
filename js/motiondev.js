@@ -145,40 +145,6 @@ investmentBlocks.forEach((block, index) => {
   });
 });
 
-// Team Section Animation
-const teamBlocks = document.querySelectorAll("#team-private .block");
-teamBlocks.forEach((block, index) => {
-  inView(block, ({ target }) => {
-    animate(
-      target,
-      { opacity: [0, 1], transform: ["translateY(70px)", "translateY(0)"] },
-      { duration: 1, easing: "ease-in-out", delay: index * 0.2 }
-    );
-
-    target.addEventListener("mouseenter", () => {
-      animate(
-        target,
-        { transform: "translateY(-5px)", boxShadow: "0 5px 15px rgba(0,0,0,0.1)" },
-        { duration: 0.5, easing: "ease-out" }
-      );
-    });
-
-    target.addEventListener("mouseleave", () => {
-      animate(
-        target,
-        { transform: "translateY(0)", boxShadow: "0 2px 10px rgba(0,0,0,0.05)" },
-        { duration: 0.5, easing: "ease-out" }
-      );
-    });
-
-    return () => 
-      animate(target, 
-        { opacity: 0, transform: "translateY(70px)" }, 
-        { duration: 0.5, easing: "ease-in" }
-      );
-  });
-});
-
 // Portfolio Animation
 const portfolioBlocks = document.querySelectorAll(".swiper-portfolio-slider .each-block");
 portfolioBlocks.forEach((block, index) => {
