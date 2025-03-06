@@ -1,3 +1,5 @@
+const { transform } = require("motion");
+
 const { animate, inView, stagger } = window.Motion;
 
 const brings = document.querySelectorAll(".About");
@@ -20,9 +22,7 @@ brings.forEach((bring, index) => {
   });
 });
 
-
 const Unlocking = document.querySelectorAll(".Unlocking");
-
 
 Unlocking.forEach((bring, index) => {
   inView(bring, ({ target }) => {
@@ -44,7 +44,6 @@ Unlocking.forEach((bring, index) => {
 
 const AboutP = document.querySelectorAll(".AboutP p");
 
-
 AboutP.forEach((bring, index) => {
   inView(bring, ({ target }) => {
     animate(
@@ -63,10 +62,7 @@ AboutP.forEach((bring, index) => {
   });
 });
 
-
-
 const IMG = document.querySelectorAll(".img");
-
 
 IMG.forEach((bring, index) => {
   inView(bring, ({ target }) => {
@@ -89,7 +85,6 @@ IMG.forEach((bring, index) => {
 
 const PeopleCard = document.querySelectorAll(".ApproachCards div");
 
-
 PeopleCard.forEach((bring, index) => {
   inView(bring, ({ target }) => {
     animate(
@@ -97,7 +92,7 @@ PeopleCard.forEach((bring, index) => {
       {
         opacity: [0, 1],
         transform: ["scale(0.9)", "scale(1)"],
-        stagger:10
+        stagger: 10,
       },
       {
         duration: 1,
@@ -109,11 +104,7 @@ PeopleCard.forEach((bring, index) => {
   });
 });
 
-
-
-
 const DontInvestIn = document.querySelectorAll(".DontInvestIn div");
-
 
 DontInvestIn.forEach((bring, index) => {
   inView(bring, ({ target }) => {
@@ -122,7 +113,7 @@ DontInvestIn.forEach((bring, index) => {
       {
         opacity: [0, 1],
         transform: ["translatex(100%)", "translate(0)"],
-        stagger:10
+        stagger: 10,
       },
       {
         duration: 1,
@@ -131,6 +122,26 @@ DontInvestIn.forEach((bring, index) => {
       }
     );
     return () => animate(target, { opacity: 0, transform: "translateY(100%)" });
+  });
+});
+
+const Investment = document.querySelectorAll(".Investment div");
+
+Investment.forEach((bring, index) => {
+  inView(bring, ({ target }) => {
+    animate(
+      target,
+      {
+        opacity: [0, 1],
+        transform: ["translateY(50%)", "translateY(0)"],
+      },
+      {
+        duration: 0.5,
+        easing: "ease-out",
+        delay: index * 0.1,
+      }
+    );
+    return () => animate(target, { opacity: 0, transform: "translateY(50%)" });
   });
 });
 
